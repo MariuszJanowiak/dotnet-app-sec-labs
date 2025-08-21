@@ -1,0 +1,17 @@
+# Build outputs
+bin/
+obj/
+
+# VS / Rider / VS Code
+.vs/
+.idea/
+.vscode/
+
+# User-specific
+*.user
+*.suo
+
+# System
+*.log
+*.tmp
+*.bak
