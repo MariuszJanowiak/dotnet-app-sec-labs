@@ -1,9 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36310.24 d17.14
+VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.CommandInjection", "Lab.CommandInjection\Lab.CommandInjection.csproj", "{34899854-23C0-4DFE-B9F6-A07D96C0DC8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Labs", "Labs", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OWASP", "OWASP", "{59E3C6AB-3A13-4B33-B300-84F705E8CB7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "A03-Injection", "A03-Injection", "{9B7C61A3-7FA9-4021-BF9A-1A07FB92CEA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommandInjection", "CommandInjection", "{20680A11-C142-4176-A588-2B99B42859EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vulnerable", "Vulnerable", "{86C7EE7E-CE5A-4D2B-88FD-58BCB8ED6B05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +28,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{34899854-23C0-4DFE-B9F6-A07D96C0DC8B} = {86C7EE7E-CE5A-4D2B-88FD-58BCB8ED6B05}
+		{59E3C6AB-3A13-4B33-B300-84F705E8CB7F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{9B7C61A3-7FA9-4021-BF9A-1A07FB92CEA7} = {59E3C6AB-3A13-4B33-B300-84F705E8CB7F}
+		{20680A11-C142-4176-A588-2B99B42859EA} = {9B7C61A3-7FA9-4021-BF9A-1A07FB92CEA7}
+		{86C7EE7E-CE5A-4D2B-88FD-58BCB8ED6B05} = {20680A11-C142-4176-A588-2B99B42859EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FADCAF2A-839C-416C-97DA-48A043C34690}
