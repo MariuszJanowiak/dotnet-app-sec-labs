@@ -9,4 +9,5 @@ Labs list:
 
 | Lab | Vulnerability | Description |
 |-----|---------------|-------------|
-| [Lab.CommandInjection](./Lab.CommandInjection) | Command Injection | Example of shell command injection via unsanitized input |
+| [Lab.CommandInjection](./OWASP/A03-Injection/CommandInjection) | Command Injection | Example of shell command injection via unsanitized input |
+| [Lab.AccessControl](./OWASP/A01-Broken-Authentication/AccessControl) | Access Control | Example of broken access control (IDOR): missing owner check on resource |
