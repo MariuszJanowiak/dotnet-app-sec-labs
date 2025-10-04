@@ -1,0 +1,6 @@
+@Lab.AccessControl.Vulnerable_HostAddress = http://localhost:5032
+
+GET {{Lab.AccessControl.Vulnerable_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

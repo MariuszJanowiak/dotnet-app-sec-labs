@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.CommandInjection", "Lab.CommandInjection\Lab.CommandInjection.csproj", "{34899854-23C0-4DFE-B9F6-A07D96C0DC8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.CommandInjection", "OWASP\A03-Injection\CommandInjection\Vulnerable\Lab.CommandInjection\Lab.CommandInjection.csproj", "{34899854-23C0-4DFE-B9F6-A07D96C0DC8B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Labs", "Labs", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -17,7 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vulnerable", "Vulnerable", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fixed", "Fixed", "{0621BE7A-5853-4450-AE9B-042A86A158A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.CommandInjection.Fixed", "Lab.CommandInjection.Fixed\Lab.CommandInjection.Fixed.csproj", "{6F77B103-B339-4463-8443-F519CD2B70DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.CommandInjection.Fixed", "OWASP\A03-Injection\CommandInjection\Fixed\Lab.CommandInjection.Fixed\Lab.CommandInjection.Fixed.csproj", "{6F77B103-B339-4463-8443-F519CD2B70DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "A01-Broken-Authentication", "A01-Broken-Authentication", "{11A4B4AB-0E2A-4A74-834F-56AA5498F615}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccessControl", "AccessControl", "{2629D812-D281-46BE-BCEB-FBF2D7F562E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vulnerable", "Vulnerable", "{3499E7CE-7B3D-4FE0-B562-FCD610361204}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.AccessControl.Vulnerable", "OWASP\A01-Broken-Authentication\AccessControl\Vulnerable\Lab.AccessControl.Vulnerable\Lab.AccessControl.Vulnerable.csproj", "{8EA9BA76-5330-4FA1-B983-D5BB8D1F134A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,10 @@ Global
 		{6F77B103-B339-4463-8443-F519CD2B70DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F77B103-B339-4463-8443-F519CD2B70DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F77B103-B339-4463-8443-F519CD2B70DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA9BA76-5330-4FA1-B983-D5BB8D1F134A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA9BA76-5330-4FA1-B983-D5BB8D1F134A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA9BA76-5330-4FA1-B983-D5BB8D1F134A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA9BA76-5330-4FA1-B983-D5BB8D1F134A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +57,10 @@ Global
 		{86C7EE7E-CE5A-4D2B-88FD-58BCB8ED6B05} = {20680A11-C142-4176-A588-2B99B42859EA}
 		{0621BE7A-5853-4450-AE9B-042A86A158A1} = {20680A11-C142-4176-A588-2B99B42859EA}
 		{6F77B103-B339-4463-8443-F519CD2B70DA} = {0621BE7A-5853-4450-AE9B-042A86A158A1}
+		{11A4B4AB-0E2A-4A74-834F-56AA5498F615} = {59E3C6AB-3A13-4B33-B300-84F705E8CB7F}
+		{2629D812-D281-46BE-BCEB-FBF2D7F562E3} = {11A4B4AB-0E2A-4A74-834F-56AA5498F615}
+		{3499E7CE-7B3D-4FE0-B562-FCD610361204} = {2629D812-D281-46BE-BCEB-FBF2D7F562E3}
+		{8EA9BA76-5330-4FA1-B983-D5BB8D1F134A} = {3499E7CE-7B3D-4FE0-B562-FCD610361204}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FADCAF2A-839C-416C-97DA-48A043C34690}
