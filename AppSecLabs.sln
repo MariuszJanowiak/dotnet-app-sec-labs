@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.CommandInjection", "Lab.CommandInjection\Lab.CommandInjection.csproj", "{34899854-23C0-4DFE-B9F6-A07D96C0DC8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.CommandInjection", "OWASP\A03-Injection\CommandInjection\Vulnerable\Lab.CommandInjection\Lab.CommandInjection.csproj", "{34899854-23C0-4DFE-B9F6-A07D96C0DC8B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Labs", "Labs", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vulnerable", "Vulnerable", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fixed", "Fixed", "{0621BE7A-5853-4450-AE9B-042A86A158A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.CommandInjection.Fixed", "Lab.CommandInjection.Fixed\Lab.CommandInjection.Fixed.csproj", "{6F77B103-B339-4463-8443-F519CD2B70DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.CommandInjection.Fixed", "OWASP\A03-Injection\CommandInjection\Fixed\Lab.CommandInjection.Fixed\Lab.CommandInjection.Fixed.csproj", "{6F77B103-B339-4463-8443-F519CD2B70DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "A01-Broken-Authentication", "A01-Broken-Authentication", "{11A4B4AB-0E2A-4A74-834F-56AA5498F615}"
 EndProject
