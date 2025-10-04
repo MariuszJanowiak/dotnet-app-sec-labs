@@ -1,6 +1,0 @@
-@Lab.CommandInjection.Fixed_HostAddress = http://localhost:5277
-
-GET {{Lab.CommandInjection.Fixed_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

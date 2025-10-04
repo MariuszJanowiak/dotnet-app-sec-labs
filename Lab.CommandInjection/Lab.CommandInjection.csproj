@@ -4,8 +4,10 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
-
 	<ItemGroup>
-		<Folder Include="PoC\Artefacts\" />
+	  <Compile Remove="PoC\Artefacts\**" />
+	  <Content Remove="PoC\Artefacts\**" />
+	  <EmbeddedResource Remove="PoC\Artefacts\**" />
+	  <None Remove="PoC\Artefacts\**" />
 	</ItemGroup>
 </Project>

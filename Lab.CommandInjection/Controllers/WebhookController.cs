@@ -7,7 +7,7 @@ namespace Lab.CommandInjection.Controllers
     public class WebhookController : ControllerBase
     {
         [HttpPost]
-        [Consumes("application/json")] // Accepts only JSON body
+        [Consumes("application/json")]
         public IActionResult ReceiveWebhook([FromBody] RepoPayload payload)
         {
             // Minimal null check

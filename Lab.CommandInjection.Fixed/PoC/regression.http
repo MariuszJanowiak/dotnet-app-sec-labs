@@ -1,0 +1,44 @@
+﻿### Regression tests for Command Injection Fixed version
+
+# TEST NO. 1
+# Description: write file via shell operator
+# Expected: HTTP 400 Bad Request
+# Body: "Repo must be a valid HTTPS URL."
+
+POST http://localhost:5100/webhook-safe
+Content-Type: application/json
+
+{ "repo": "echo owned > ./PoC/Artefacts/owned.txt" }
+
+###
+# TEST NO. 2
+# Description: clone malware repo on disallowed host
+# Expected: HTTP 400 Bad Request
+# Body: "Repository host is not allowed."
+
+POST http://localhost:5100/webhook-safe
+Content-Type: application/json
+
+{ "repo": "https://evil.example.com/malware.git" }
+
+###
+# TEST NO. 3
+# Description: stdout-through-pipe attempt
+# Expected: HTTP 400 Bad Request
+# Body: "Repo must be a valid HTTPS URL."
+
+POST http://localhost:5100/webhook-safe
+Content-Type: application/json
+
+{ "repo": "HelloFromCMD | whoami" }
+
+###
+# TEST NO. 4
+# Description: Null payload
+# Expected: HTTP 400 Bad Request
+# Body: "Repo is required."
+
+POST http://localhost:5100/webhook-safe
+Content-Type: application/json
+
+{ "repo": null }
